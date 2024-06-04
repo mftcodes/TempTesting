@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
 */
 
 window.onload = function() {
-    var el = document.getElementById('test-textarea');
+    var el = document.getElementById('test_textarea');
     el.value = callme();
 }

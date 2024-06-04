@@ -1,8 +1,8 @@
-function callme(){
-  return 'return success';
+function setVal(){
+  return 'Boom! All set!';
 }
 
 window.onload = function() {
     var el = document.getElementById('privacy_text');
-    el.value = callme();
+    el.value = setVal();
 }

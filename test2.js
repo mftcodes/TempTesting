@@ -15,11 +15,11 @@ class Quiz extends React.Component {
     render() {
         let question = null;
         if (this.state.correct === null) {
-            question = `<div>
+            question = <div>
                 <button onClick={() => this.answer(false)}>a) A graph database query language</button>
                 <button onClick={() => this.answer(true)}>b) An API query language</button>
                 <button onClick={() => this.answer(false)}>c) A graph drawing API</button>
-            </div>`;
+            </div>;
         }
         let answer = null;
         if (this.state.correct === true) {

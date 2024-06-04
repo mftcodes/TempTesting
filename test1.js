@@ -2,7 +2,7 @@ function setVal(){
   return 'Boom! All set!';
 }
 
-window.onload = function() {
-    var el = document.getElementById('privacy_text');
+document.addEventListener('DOMContentLoaded', function() {
+    var el = document.getElementById('test-textarea');
     el.value = setVal();
-}
+}, false);

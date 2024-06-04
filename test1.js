@@ -1,6 +1,8 @@
 function callme(){
-return 'return success';
+  return 'return success';
 }
 
-var el = document.getElementById('privacy_text');
-el.value = callme();
+window.onload = function() {
+    var el = document.getElementById('privacy_text');
+    el.value = callme();
+}

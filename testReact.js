@@ -15,24 +15,24 @@ class Quiz extends React.Component {
     render() {
         let question = null;
         if (this.state.correct === null) {
-            question = <div>
+            question = <><div>
                 <button onClick={() => this.answer(false)}>a) A graph database query language</button>
                 <button onClick={() => this.answer(true)}>b) An API query language</button>
                 <button onClick={() => this.answer(false)}>c) A graph drawing API</button>
-            </div>;
+            </div></>;
         }
         let answer = null;
         if (this.state.correct === true) {
-            answer = <div className="correct">Correct! It is an API query language</div>;
+            answer = <>div className="correct">Correct! It is an API query language</div></>;
         } else if (this.state.correct === false) {
-            answer = <div className="incorrect">Nope! It's actually an API query language</div>;
+            answer = <><div className="incorrect">Nope! It's actually an API query language</div></>;
         }
 
-        return <div className="quiz">
+        return <><div className="quiz">
             <p>What is GraphQL?</p>
             {question}
             {answer}
-        </div>;
+        </div></>;
     }
 }
 ReactDOM.render(
